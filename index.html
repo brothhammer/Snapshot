@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+
+      <title>Google Places API - Gater nearby places</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5dj6sTAyGKxhzt9pd2gAo7Kp2JfOacLc&libraries=places"></script>
+
+  </head>
+  <body>
+	
+	<div class="container">
+  		<h1>Gather Pictures from Google Places</h1>
+  	</div>
+
+  		<br>
+
+	<div class="container">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+  			<div id="pictures">
+  			</div>
+  		</div>
+
+		<div class="col-xs-3">
+            <form id="gif-form" role="form">
+                <h2><legend>Address</legend></h2>
+                <div class="form-group">
+                    <label for="newField-input">Add the address of interest below</label>
+                    <input type="text" id="topic-input">
+                </div>
+                <input type="submit" value="Address" class="btn btn-primary" id="addUserTopic">
+            </form>    
+        </div>
+    </div>
+
+  	<script src="assets/javascript/pictureApp.js"></script>
+
+  </body>
+</html>
