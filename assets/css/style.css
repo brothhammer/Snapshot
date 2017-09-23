@@ -1,0 +1,53 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: #E8F3F8;
+	font-family: verdana;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 50px;
+	font-weight: bolder;
+	color: steelblue;
+	margin-bottom: 15px;
+}
+
+form
+{
+	margin: 20px auto;
+	width: 450px;
+	color: steelblue;
+}
+
+input
+{
+	padding: 7px;
+	margin: 7px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+input[type="text"]
+{
+	background-color: #FAF6D9;
+}
+
+input[type="text"]:focus
+{
+	background-color: white;
+}
+
+img
+{
+	border-radius: 5px;
+	margin: 20px auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

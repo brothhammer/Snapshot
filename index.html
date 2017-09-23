@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <title>Project 1</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <title>Google Places API - Gater nearby places</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
 
-      <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css">
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5dj6sTAyGKxhzt9pd2gAo7Kp2JfOacLc&libraries=places"></script>
-
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5dj6sTAyGKxhzt9pd2gAo7Kp2JfOacLc&libraries=places"></script>
+    
   </head>
+
   <body>
-	
-	<div class="container">
-  		<h1>Gather Pictures from Google Places</h1>
-  	</div>
 
-  		<br>
+  <form>
+    <h1>Enter Address</h1>    
+    <input type="text" placeholder="Street Address Line 1" id="address_street1">
+    <input type="text" placeholder="Street Address Line 2" id="address_street2">
+    <input type="text" placeholder="City" id="address_city">
+    <input type="text" placeholder="State" id="address_state">
+    <input type="text" placeholder="Zip Code" id="address_zipcode">
 
-	<div class="container">
+    <div class="form_buttons">
+      <input type="submit" name="Submit" class="btn btn-primary" id="address_submit">
+      <input type="reset" name="Clear" class="btn btn-warning" id="clear_button">
+    </div>
+
+  </form>
+
+  <div></div>
+
+  <div id="geocode_results">
+    
+
+  </div>
+
+  <div id="streetview_results" class="container">
+    
+
+  </div>  
+  
+
+
+
+
+
+  <div class="container">
+      <h1>Gather Pictures from Google Places</h1>
+    </div>
+
+      <br>
+
+  <div class="container">
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-  			<div id="pictures">
-  			</div>
-  		</div>
+        <div id="map"></div>
+        <div id="pictures">
+        </div>
+      </div>
 
-		<div class="col-xs-3">
+    <div class="col-xs-3">
             <form id="gif-form" role="form">
                 <h2><legend>Address</legend></h2>
                 <div class="form-group">
@@ -40,7 +77,36 @@
         </div>
     </div>
 
-  	<script src="assets/javascript/pictureApp.js"></script>
+  <!--  <script src="assets/javascript/pictureApp.js"></script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <!-- Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" 
+  integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" 
+  crossorigin="anonymous"></script>
+    
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+  integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+  crossorigin="anonymous"></script>
+
+  <!-- My JavaScript File -->
+  <script src="assets/javascript/app.js"></script>  
 
   </body>
-</html>
+</html>   
