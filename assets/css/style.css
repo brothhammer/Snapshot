@@ -1,0 +1,110 @@
+.wrapper{
+background-image: url(../image/organic-tiles.png);;
+}
+
+
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: #E8F3F8;
+	font-family: verdana;
+}
+
+h2
+{
+	text-align: center;
+	font-size: 50px;
+	font-weight: bolder;
+	color: steelblue;
+	margin-bottom: 15px;
+}
+
+.nav-wrapper{
+background-color: #28988a;
+}
+
+/*nav {
+	width: 70%;
+}*/
+
+#title{
+font-family: 'Montserrat Alternates', sans-serif;
+text-align: center;
+font-weight: bolder;
+color: white;
+font-size: 70px;
+
+/*background-color: black;
+margin-left: 90px;
+margin-right: 90px;*/
+
+}
+
+form
+{
+	margin: 10px auto;
+	line-height: 0px;
+	width: 300px;
+	color: steelblue;
+	padding: 20px;
+	margin-bottom: 10px;
+
+}
+
+label{
+	margin-bottom: 20px;
+}
+
+input
+{
+	padding: 7px;
+	margin: 7px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+input[type="text"]
+{
+	background-color: #FAF6D9;
+}
+
+input[type="text"]:focus
+{
+	background-color: white;
+}
+
+img {
+	width: 300px;
+	height: 200px;
+	border-radius: 5%;
+}
+
+.streetView
+{
+	border-radius: 5px;
+	margin: 20px auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#pictures {
+	margin-left: .75 rem;
+}
+
+.page-footer
+{
+	background-color: #28988a;
+	text-align: center;
+	padding: 10px;
+
+}
+
+/*#trafficMap{
+	height: 500px;
+}*/
