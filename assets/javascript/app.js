@@ -66,7 +66,7 @@ $("#address_submit").click(function()
 
 		console.log(steetviewURL);
 
-		var streetViewImage = $("<img>").attr("src", steetviewURL).css("width", "600px").css("height", "400px")
+		var streetViewImage = $("<img>").attr("src", steetviewURL).css("width", "800px").css("height", "400px")
         streetViewImage.addClass("streetView");
 
 
@@ -114,12 +114,12 @@ $("#address_submit").click(function()
 
             	addImg.addClass("col s12 m4 l4");
             	addImg.addClass("row");
-            	addImg.addClass("materialboxed")
+            	// addImg.addClass("materialboxed")
 
             	$("#pictures").append(addImg);
             	$("#pictures").addClass("row");
             	$("#pictures").addClass("col s12 m4 l4");
-            	$("#pictures").addClass("materialboxed");
+            	// $("#pictures").addClass("materialboxed");
             }
           });
 }
@@ -142,10 +142,17 @@ initMap();
 
 
 });
+
+
 })
 
 
 
+})
+
+	$("#clear_button").click (function()
+{
+	window.location.reload(true);
 })
 
 

@@ -1,7 +1,13 @@
-.wrapper{
-background-image: url(../image/organic-tiles.png);;
+.container{
+	margin: auto;
+	padding-top: 30px;
 }
 
+.wrapper{
+background-image: url(../image/organic-tiles.png);;
+margin: 0 auto;
+/*padding-top: 20px;*/
+}
 
 *
 {
@@ -27,9 +33,11 @@ h2
 background-color: #28988a;
 }
 
-/*nav {
-	width: 70%;
-}*/
+/*nav{
+width: 70%;
+}
+*/
+
 
 #title{
 font-family: 'Montserrat Alternates', sans-serif;
@@ -37,6 +45,7 @@ text-align: center;
 font-weight: bolder;
 color: white;
 font-size: 70px;
+
 
 /*background-color: black;
 margin-left: 90px;
@@ -94,17 +103,28 @@ img {
 }
 
 #pictures {
-	margin-left: .75 rem;
+	margin-left: 15px;
 }
 
 .page-footer
 {
 	background-color: #28988a;
 	text-align: center;
-	padding: 10px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 0;
+/*	position: fixed;
+	bottom: 0;*/
 
 }
 
-/*#trafficMap{
-	height: 500px;
+.footer-copyright{
+	text-align: center;
+	padding: 0px;
+}
+
+/*.wrapper2{
+	margin-right: auto;
+
+
 }*/
