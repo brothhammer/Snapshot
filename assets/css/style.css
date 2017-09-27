@@ -123,6 +123,22 @@ img {
 	padding: 0px;
 }
 
+.wrapper3{
+	text-align: center;
+		position: fixed;
+	bottom: 0;
+
+}
+
+ body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+ }
+ main {
+     flex: 1 0 auto;
+ }
+
 /*.wrapper2{
 	margin-right: auto;
 
