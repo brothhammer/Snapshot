@@ -8,7 +8,8 @@ var apiKeys =
 {
 	googleGeocode: "AIzaSyAtpm5B5wXU56SrAZ-Z9OBgfMoMaXovy3A",
 	googleStreetview: "AIzaSyDgH7bb2ybHKZ3K-45N_jNKOPAhB6p-5kc",
-	zillow: "X1-ZWz1fzqykaoah7_aui2x"
+	zillow: "X1-ZWz1fzqykaoah7_aui2x",
+	onboard: "6f1057e839cf36ac5c35744c5461b18c"
 };
 
 var userAddress =
@@ -79,7 +80,7 @@ $("#address_submit").click(function()
 		cityPlaceId = apireturn.results[0].place_id;
 		console.log(cityPlaceId);
 	
-
+	//get images from google places
 	logPlaceDetails();
 
 	function logPlaceDetails() {
@@ -100,9 +101,25 @@ $("#address_submit").click(function()
           });
       }
 
+      initMap();
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('trafficMap'), {
+          zoom: 13,
+          center: {lat: userLocation.latitude, lng: userLocation.longitude}
+        });
+
+
+        var trafficLayer = new google.maps.TrafficLayer();
+        trafficLayer.setMap(map);
+
+        // var addMap = $("<img>");
+        // addMap.attr("src", map)
+
+        // $("#trafficMap").append(addMap);
+      }
+
 });
 })
-
-
 
 })
